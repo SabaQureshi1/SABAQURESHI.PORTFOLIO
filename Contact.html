@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba Qureshi - Graphic Designer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .video-container {
+            flex: 1;
+            max-width: 50%;
+            transform: scale(0.7);
+        }
+        .video {
+            width: 100%;
+        }
+        .about {
+            flex: 1;
+            max-width: 45%;
+            padding: 0 20px;
+        }
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .buttons a {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .buttons :hover{
+            background-color: rgb(0, 102, 128);
+        }
+        .nav {
+            position: fixed;
+            top: 20px;
+            right: 150px;
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, sans-serif;
+        }
+        .nav :hover{
+            background-color: gray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="Home.html">HOME</a>
+    <a href="Portfolio.html">PORTFOLIO</a>
+    <a href="Contact.html">CONTACT</a>
+</div>
+
+<div class="container">
+    <div class="video-container">
+        <video class="video" src="LOG.mp4" autoplay loop muted></video>
+    </div>
+</div>
+<audio id="hover-sound" src="mixkit-camera-shutter-click-1133.mp3" ></audio>
+<div class="buttons">
+    <a href="https://github.com/SabaQureshi1" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/saba-qureshi-730627294/" target="_blank">LinkedIn</a>
+    <a href="https://www.freelancer.com/u/sabaqureshi839" target="_blank">Freelancer</a>
+    <a href="https://www.fiverr.com/sabaqureshi_?up_rollout=true" target="_blank">Fiverr</a>
+    <a href="https://www.upwork.com/freelancers/~01e2aab9a194ddcf50" target="_blank">Upwork</a>
+</div>
+
+<script>
+    const hoverSound = document.getElementById('hover-sound');
+    const buttons = document.querySelectorAll('.buttons a');
+    const navLinks = document.querySelectorAll('.nav a');
+
+    buttons.forEach(button => {
+        button.addEventListener('mouseover', () => {
+            hoverSound.play();
+        });
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            hoverSound.play();
+        });
+    });
+</script>
+
+</body>
+</html>

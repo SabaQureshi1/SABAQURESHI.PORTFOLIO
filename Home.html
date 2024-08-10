@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, sans-serif;
+            
+        }
+        .v1{
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .v1:hover{
+            filter: blur(3px);
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+            background-color:rgb(42, 41, 41);
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .b1, .b2, .b3 {
+            background-color: transparent;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, sans-serif;
+        }
+        .b1:hover, .b2:hover, .b3:hover {
+            font-weight: bold;
+            background-color:gray;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <video class="v1" src="3130284-uhd_3840_2160_30fps.mp4" autoplay muted loop></video>
+    <div class="navbar">
+        <div class="logo">Saba Qureshi</div>
+       
+<div class="buttons">
+    <a href="Home.html"><button class="b2">HOME</button></a>
+    <a href="portfolio.html"><button class="b2">PORTFOLIO</button></a>
+    <a href="Contact.html"><button class="b3">CONTACT</button></a>
+</div>
+    </div>
+</body>
+</html>
+
