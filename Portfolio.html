@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba Qureshi</title>
+    <style>
+        body {
+            background-color: black;
+            margin: auto;
+            padding: auto;
+            font-family: 'Times New Roman', Times, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .header .welcome {
+            font-size: 34px;
+            font-weight: bold;
+           
+        }
+        .header .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .header .nav button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, sans-serif;
+        }
+        .header .nav button:hover {
+            background-color: gray;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 100px;
+            text-align: center;
+        }
+        .cv {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .download {
+            background-color: rgb(0, 174, 255);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .download:hover {
+            background-color: gray;
+
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 20%;
+            margin: 10px;
+            border: 1px solid white;
+            transition: transform 0.5s;
+        }
+        .gallery img:hover {
+            transform: rotate(3deg);
+            width:29% ;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="welcome">Welcome to my portfolio</div>
+        <div class="nav">
+            <a href="home.html"><button class="b1">HOME</button></a>
+            <a href="Portfolio.html"><button class="b2">PORTFOLIO</button></a>
+            <a href="Contact.html"><button class="b3">CONTACT</button></a>
+        </div>   
+    </div>
+    </div>
+    <div class="container">
+        <div class="cv" src="Saba Qureshi.docx">CV</div>
+       <a class="cv" href="Saba Qureshi.docx"> <button class="download">PREVIEW</button> </a>
+        <div class="gallery">
+            <img src="bro1.png">
+            <img src="bro2.png">
+            <img src="FLYER.png">
+            <img src="FLYER2.png">
+            <img src="FLYER3.png">
+            <img src="Untitled design.png">
+            <img src="LOGO.png">
+            <img src="LOGO3.png">
+            <img src="P1.png">
+            <img src="P2.png">
+        </div>
+    </div>
+
+    <audio id="hoverSound" src="mixkit-sci-fi-click-900.mp3"></audio>
+
+    <script>
+        const images = document.querySelectorAll('.gallery img');
+        const hoverSound = document.getElementById('hoverSound');
+
+        images.forEach((image) => {
+            image.addEventListener('mouseover', () => {
+                hoverSound.play();
+            });
+        });
+    </script>
+</body>
+</html>
